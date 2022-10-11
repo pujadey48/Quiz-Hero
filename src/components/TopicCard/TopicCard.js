@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 
 const TopicCard = ({ topic, onTopicSelected }) => {
   return (
-    <div className="card p-2 col-lg-3 col-md-6 col-12">
+    <div className=" col-lg-3 col-md-6 col-12 mb-5">
+    <div className="card m-2 ">
       <img
         src={topic.logo}
         className="card-img-top img-fluid bg-light"
@@ -21,6 +22,7 @@ const TopicCard = ({ topic, onTopicSelected }) => {
           Start Quiz
         </Link>
       </div>
+    </div>
     </div>
   );
 };
