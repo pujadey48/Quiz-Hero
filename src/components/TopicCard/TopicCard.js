@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const TopicCard = ({ topic, onTopicSelected }) => {
   return (
@@ -12,13 +13,13 @@ const TopicCard = ({ topic, onTopicSelected }) => {
         <h5 className="card-title">
           {topic.name} ({topic.total})
         </h5>
-        <a
-          href="/#"
+        <Link
+          to={"/quiz/"+topic.id}
           onClick={() => onTopicSelected(topic)}
           className="btn btn-primary"
         >
           Start Quiz
-        </a>
+        </Link>
       </div>
     </div>
   );

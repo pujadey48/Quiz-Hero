@@ -5,6 +5,7 @@ import Home from "./components/Home/Home";
 import Statistics from "./components/Statistics/Statistics";
 import Blogs from "./components/Blogs/Blogs";
 import { loadTopics } from "./loaders/loadTopics";
+import Quiz from "./components/Quiz/Quiz";
 
 function App() {
   const router = createBrowserRouter([
@@ -16,6 +17,11 @@ function App() {
           path: "/",
           loader: loadTopics,
           element: <Home></Home>,
+        },
+        {
+          path: "quiz/:id",
+          // loader: productsAndCartLoader,
+          element: <Quiz></Quiz>,
         },
         {
           path: "stats",

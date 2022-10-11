@@ -11,6 +11,9 @@ const Home = () => {
 
   return (
     <div className="container">
+      <div className="row mb-3 mt-3">
+        <img src="quiz_image.jpeg" className="card-img-top img-fluid" alt="..." />
+      </div>
       <div className="d-flex flex-wrap row">
         {topics.map((topic) => (
           <TopicCard
