@@ -4,10 +4,7 @@ import TopicCard from "../TopicCard/TopicCard";
 
 const Home = () => {
   const topics = useLoaderData();
-  console.log("topics: ", topics);
-  const onTopicSelected = (topic) => {
-    console.log(topic);
-  };
+  // console.log("topics: ", topics);
 
   return (
     <div className="container">

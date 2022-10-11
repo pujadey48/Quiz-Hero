@@ -29,6 +29,7 @@ function App() {
         },
         {
           path: "stats",
+          loader: loadTopics,
           element: <Statistics></Statistics>,
         },
         {
