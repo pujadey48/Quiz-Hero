@@ -6,6 +6,7 @@ import Statistics from "./components/Statistics/Statistics";
 import Blogs from "./components/Blogs/Blogs";
 import { loadTopics } from "./loaders/loadTopics";
 import Quiz from "./components/Quiz/Quiz";
+import { loadQuiz } from "./loaders/loadQuiz";
 
 function App() {
   const router = createBrowserRouter([
@@ -20,12 +21,13 @@ function App() {
         },
         {
           path: "quiz/:id",
-          // loader: productsAndCartLoader,
+          loader: ({ params }) => {
+            return loadQuiz(params.id);
+          },
           element: <Quiz></Quiz>,
         },
         {
           path: "stats",
-          // loader: productsAndCartLoader,
           element: <Statistics></Statistics>,
         },
         {

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useLoaderData } from "react-router-dom";
+import { useLoaderData } from "react-router-dom";
 import TopicCard from "../TopicCard/TopicCard";
 
 const Home = () => {
@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <div className="container">
       <div className="row mb-3 mt-3">
-        <img src="quiz_image.jpeg" className="card-img-top img-fluid" alt="..." />
+        <img src="quiz_image.jpeg" className="card-img-top img-fluid bg-light" alt="..." />
       </div>
       <div className="d-flex flex-wrap row">
         {topics.map((topic) => (
