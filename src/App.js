@@ -7,6 +7,7 @@ import Blogs from "./components/Blogs/Blogs";
 import { loadTopics } from "./loaders/loadTopics";
 import Quiz from "./components/Quiz/Quiz";
 import { loadQuiz } from "./loaders/loadQuiz";
+import Page404 from "./Page404";
 
 function App() {
   const router = createBrowserRouter([
@@ -33,6 +34,10 @@ function App() {
         {
           path: "blogs",
           element: <Blogs></Blogs>,
+        },
+        {
+          path: "*",
+          element: <Page404></Page404>,
         },
       ],
     },
