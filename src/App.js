@@ -6,6 +6,7 @@ import Main from './layouts/Main';
 import Home from './components/Home/Home';
 import Statistics from './components/Statistics/Statistics';
 import Blogs from './components/Blogs/Blogs';
+import { loadTopics } from './loaders/loadTopics';
 
 function App() {
   const router = createBrowserRouter([
@@ -15,7 +16,7 @@ function App() {
       children: [
         {
           path: '/',
-          loader: () => fetch('products.json'),
+          loader: loadTopics,
           element: <Home></Home>
         },
         {
