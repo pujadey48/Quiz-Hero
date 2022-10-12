@@ -23,7 +23,7 @@ const Blogs = () => {
                 aria-expanded="true"
                 aria-controls="collapseOne"
               >
-                How does react work?
+                What is the purpose of react router?
               </button>
             </h2>
             <div
@@ -34,11 +34,7 @@ const Blogs = () => {
             >
               <div className="accordion-body">
                 <p className="text-muted small">
-                  ReactJS divides the UI into isolated reusable pieces of code
-                  known as components. React components work similarly to
-                  JavaScript functions as they accept arbitrary inputs called
-                  properties or props. It's possible to have as many components
-                  as necessary without cluttering your code.
+                React Router is a standard library for routing in React. It enables the navigation among views of various components in a React Application, allows changing the browser URL, and keeps the UI in sync with the URL.
                 </p>
               </div>
             </div>
@@ -53,7 +49,7 @@ const Blogs = () => {
                 aria-expanded="false"
                 aria-controls="collapseTwo"
               >
-                What is the difference between props and state?
+                How does context API work?
               </button>
             </h2>
             <div
@@ -64,9 +60,10 @@ const Blogs = () => {
             >
               <div className="accordion-body">
                 <p className="text-muted small">
-                  Props are used to pass data from one component to another. The
-                  state is a local data storage that is local to the component
-                  only and cannot be passed to other components.
+                The React Context API is a way for a React app to effectively produce global variables that can be passed around. This is the alternative to "prop drilling" or moving props from grandparent to child to parent, and so on. Context is also touted as an easier, lighter approach to state management using Redux.
+                </p>
+                <p className="text-muted small">
+                React.createContext() is all we need. It returns a consumer and a provider. Provider is a component that as it's names suggests provides the state to its children. It will hold the "store" and be the parent of all the components that might need that store. Consumer as it so happens is a component that consumes and uses the state.
                 </p>
               </div>
             </div>
@@ -81,7 +78,7 @@ const Blogs = () => {
                 aria-expanded="false"
                 aria-controls="collapseThree"
               >
-                What are the use cases of useEffect hook except API data load?
+                What is useRef in react?
               </button>
             </h2>
             <div
@@ -92,19 +89,7 @@ const Blogs = () => {
             >
               <div className="accordion-body">
                 <p className="text-muted small">
-                  <ul>
-                    <li>Running once on mount: fetch API data.</li>
-                    <li>Running on state change: validating input field.</li>
-                    <li>Running on state change: live filtering.</li>
-                    <li>
-                      Running on state change: trigger animation on new array
-                      value.
-                    </li>
-                    <li>
-                      Running on props change: update paragraph list on fetched
-                      API data update.
-                    </li>
-                  </ul>
+                The useRef Hook allows you to persist values between renders. It can be used to store a mutable value that does not cause a re-render when updated. It can be used to access a DOM element directly.
                 </p>
               </div>
             </div>

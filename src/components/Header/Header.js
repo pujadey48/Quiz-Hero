@@ -6,14 +6,14 @@ const Header = () => {
     <div className="container">
       <nav className="navbar bg-light">
         <div className="container-fluid">
-          <a className="navbar-brand" href="/">
-            <img
+          <a className="navbar-brand text-warning fw-bold" href="/">
+            {/* <img
               src="quiz.jpg"
               alt="Logo"
               width="30"
               height="24"
               className="d-inline-block align-text-top"
-            />
+            /> */}
             Quiz Hero
           </a>
           <ul className="nav justify-content-end">
